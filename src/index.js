@@ -21,20 +21,20 @@ const store = createStore
     ));
 
 
-const theme = createTheme({
-  palette: {
-    primary: "#A0E2F5",
-    secondary: blueGrey,
-  },
-});
+// const theme = createTheme({
+//   palette: {
+//     primary: "#A0E2F5",
+//     secondary: blueGrey,
+//   },
+// });
 
 ReactDOM.render(
   <Provider store={store}>
-    <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ThemeProvider>
+    {/* <ThemeProvider theme={theme}> */}
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+    {/* </ThemeProvider> */}
   </Provider>,
   document.getElementById('root')
 );
